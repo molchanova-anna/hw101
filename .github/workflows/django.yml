@@ -27,4 +27,5 @@ jobs:
         pip install -r requirements.txt
     - name: Run Tests
       run: |
-        python library/manage.py test books
+        cd library
+        python manage.py test books
